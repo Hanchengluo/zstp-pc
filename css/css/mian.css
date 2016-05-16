@@ -258,7 +258,7 @@ audio:not([controls]),
 }
 body {
   font-family: "Microsoft YaHei";
-  color: #2c3444;
+  color: #333333;
   font-size: 14px;
 }
 a {
@@ -1081,26 +1081,28 @@ input:-ms-input-placeholder {
   margin: 10px 0;
 }
 .top-search {
-  width: 286px;
-  height: 28px;
+  width: 343px;
+  height: 38px;
   float: left;
   background: #fff;
-  margin: 6px auto 0 90px;
+  margin-top: 33px;
+  border: #5994F2 solid 2px;
 }
 .top-search input {
-  width: 228px;
-  height: 24px;
+  width: 285px;
+  height: 34px;
   background: #fff;
   border: #fff solid 1px;
   text-indent: 4px;
-  color: #474f58;
+  color: #928b8f;
   float: left;
+  font-size: 14px;
 }
 .top-search a {
   display: inline-block;
   width: 56px;
-  height: 28px;
-  background: url(../../images/icon-search-btn.png) center no-repeat;
+  height: 40px;
+  background: url(../../images/icon-search-btn.png) #5994f2 center no-repeat;
 }
 .main {
   width: 1200px;
@@ -1139,8 +1141,14 @@ input:-ms-input-placeholder {
   width: 160px;
 }
 .l-nav-box {
+  position: relative;
   width: 100%;
   height: 48px;
+  z-index: 9999;
+  border-bottom: 2px solid #dae0e5\0;
+  -webkit-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  background-position-x: 10px;
   background-color: #5994f2;
 }
 #nav {
@@ -1148,20 +1156,19 @@ input:-ms-input-placeholder {
   margin-right: auto;
   margin-left: auto;
 }
-#nav li {
+#nav .items-li {
   float: left;
   height: 48px;
-  position: relative;
   width: 120px;
   margin-right: auto;
   margin-left: auto;
 }
-#nav li:hover {
+#nav .items-li:hover {
   color: #fff;
   background: #fda026;
   transition: background 0.3s ease-in;
 }
-#nav li a.items {
+#nav .items-li a.items {
   display: inline-block;
   width: 100%;
   height: 48px;
@@ -1169,98 +1176,149 @@ input:-ms-input-placeholder {
   font-size: 18px;
   text-align: center;
 }
-#nav li .active {
+#nav .items-li .active {
   background: #1071e0;
 }
-#nav li:hover .down-nav {
+#nav .items-li:hover .down-nav {
   display: block !important;
 }
-#nav li .down-nav {
+.down-nav {
   position: absolute;
   width: 100%;
   display: none;
   z-index: 9999;
-  background: url(data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7) repeat\0;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#b3000000,endColorstr=#b3000000)\0;
-  zoom: 1\0;
-  background: rgba(0, 0, 0, 0.7);
+  left: 0;
+  top: 48px;
+  background: #fff;
+  color: #666;
+  border-bottom: #FDA026 solid 4px;
 }
-:root #nav li .down-nav {
-  filter: none\9;
+.down-nav .down-navL {
+  width: 720px;
+  height: 118px;
+  padding: 16px 24px;
 }
-#nav li .down-nav li {
-  width: 100%;
-  margin-left: 4px;
-  border-bottom: #fff solid 1px;
+.down-nav .down-navL .img {
+  float: left;
+  display: inline-block;
+  width: 200px;
+  border-right: #5994f2 solid 1px;
 }
-#nav li .down-nav li:last-child {
-  border-bottom: none;
+.down-nav .down-navL .intro {
+  float: left;
+  width: 476px;
+  height: 120px;
+  display: inline-block;
+  border-right: #5994f2 solid 1px;
+  padding-left: 20px;
+  padding-right: 20px;
+  line-height: 24px;
 }
-#nav li .down-nav li a {
-  display: block;
-  height: 48px;
-  line-height: 48px;
-  font-size: 16px;
-  text-align: center;
+.down-nav .down-navR {
+  width: 432px;
+  height: 118px;
+  padding: 16px 0;
 }
-#nav li .down-nav li:hover {
-  color: #fff;
+.down-nav .down-navR li {
+  float: left;
+  width: 144px;
+  height: 32px;
+}
+.down-nav .down-navR li:hover em,
+.down-nav .down-navR li:hover a {
+  color: #5994f2;
+}
+.down-nav .down-navR li em {
+  font-family: '宋体';
+  font-size: 14px;
+  padding-right: 4px;
+  color: #44102b;
+}
+.down-nav .down-navR li a {
+  font-size: 14px;
+}
+.down-nav .down-navR li a:hover {
   text-decoration: underline;
-  background: transparent;
 }
 .big-banner {
+  height: 470px;
   overflow: hidden;
   margin-bottom: 12px;
-}
-.big-banner .ck-slide {
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
   position: relative;
 }
-.big-banner .ctrl-slide {
-  display: inline-block;
-  position: absolute;
-  top: 50%;
-  margin-top: -25px;
-  width: 30px;
-  height: 50px;
-  line-height: 50px;
-  background: rgba(44, 52, 68, 0.6);
-  color: #fff;
-  z-index: 999;
-  font-family: '宋体';
-  font-size: 34px;
-  text-align: center;
-  opacity: 1 !important;
-}
-.big-banner .ck-prev {
-  left: 0;
-}
-.big-banner .ck-next {
-  right: 0;
-}
-.big-banner .ck-slidebox {
-  position: absolute;
-  bottom: 4px;
-  right: 4px;
-  height: 20px;
-  text-align: center;
-}
-.big-banner .dot-wrap li {
-  float: left;
+.m-banner {
+  position: relative;
+  height: 470px;
   background: #fff;
-  color: #bb496c;
-  width: 20px;
-  height: 20px;
-  line-height: 20px;
-  margin: 0 0 0 5px;
-  cursor: pointer;
-  font-family: '宋体';
 }
-.big-banner .dot-wrap li.current {
-  background-color: #bb496c;
+.m-banner .banner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 470px;
+  background-position: center top;
+}
+.banner-ctrl {
+  position: absolute;
+  z-index: 9999;
+  top: 50%;
+  left: 50%;
+  width: 1200px;
+  height: 80px;
+  margin-top: -50px;
+  margin-left: -600px;
+}
+.banner-ctrl a {
+  position: absolute;
+  display: block;
+  width: 42px;
+  height: 80px;
+  font-size: 42px;
+  line-height: 80px;
+  font-family: '宋体';
+  text-align: center;
   color: #fff;
+  background: url(data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7) repeat\0;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#cc5994f2,endColorstr=#cc5994f2)\0;
+  zoom: 1\0;
+  background: rgba(89, 148, 242, 0.8);
+}
+:root .banner-ctrl a {
+  filter: none\9;
+}
+.banner-ctrl a.prev {
+  left: -30px;
+}
+.banner-ctrl a.next {
+  right: -30px;
+  background-position: -30px 0;
+}
+.m-banner .banner .main-c {
+  position: absolute;
+  z-index: 999;
+  height: 80px;
+  bottom: 30px;
+  right: 50%;
+  width: 510px;
+  margin-right: -630px;
+  color: #fff;
+  line-height: 80px;
+  font-size: 36px;
+  padding-left: 40px;
+  padding-right: 40px;
+  font-weight: 500;
+  background: url(data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7) repeat\0;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#b35994f2,endColorstr=#b35994f2)\0;
+  zoom: 1\0;
+  background: rgba(89, 148, 242, 0.7);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  white-space: nowrap;
+}
+:root .m-banner .banner .main-c {
+  filter: none\9;
 }
 #list-page {
   margin-top: 10px;

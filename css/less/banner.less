@@ -1,56 +1,73 @@
 .big-banner{
+  height: 470px;
   overflow: hidden;
   margin-bottom: 12px;
-  .ck-slide{
-    width: 100%;
-    height:100%;
-    overflow: hidden;
-    position: relative;
-  }
-  .ctrl-slide{
-    display: inline-block;
-    position: absolute;
-    top: 50%;
-    margin-top: -25px;
-    width: 30px;
-    height: 50px;
-    line-height: 50px;
-    background: rgba(44, 52, 68,.6);;
-    color: #fff;
-    z-index: 999;
-    font-family: '宋体';
-    font-size: 34px;
-    text-align: center;
-    opacity: 1 !important;
-  }
-  .ck-prev{
-    left: 0;
-  }
-  .ck-next{
-    right: 0;
-  }
-  .ck-slidebox{
-    position: absolute;
-    bottom: 4px;
-    right: 4px;
-    height: 20px;
-    text-align: center;
-  }
-  .dot-wrap{
-    li{
-      float: left;
-      background:#fff;
-      color: #bb496c;
-      width: 20px;
-      height: 20px;
-      line-height: 20px;
-      margin:0 0 0 5px;
-      cursor: pointer;
-      font-family: '宋体';
-    }
-    li.current{
-      .bg-zi();
-      color: #fff;
-    }
-  }
+  position: relative;
 }
+.m-banner
+{
+    position: relative;
+    height: 470px;
+    background: #fff;
+}
+.m-banner .banner
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 470px;
+    background-position: center top;
+}
+.banner-ctrl
+{
+    position: absolute;
+    z-index: 9999;
+    top: 50%;
+    left: 50%;
+    width: 1200px;
+    height: 80px;
+    margin-top: -50px;
+    margin-left: -600px;
+}
+.banner-ctrl a
+{
+    position: absolute;
+    display: block;
+    width: 42px;
+    height: 80px;
+    font-size: 42px;
+    line-height: 80px;
+    font-family: '宋体';
+    text-align: center;
+    color: #fff;
+    .rgba-background(rgba(89, 148, 242, 0.8));
+}
+.banner-ctrl a.prev
+{
+    left: -30px;
+}
+.banner-ctrl a.next
+{
+    right: -30px;
+    background-position: -30px 0;
+}
+.m-banner .banner .main-c
+{
+    position: absolute;
+    z-index: 999;
+    height: 80px;
+    bottom: 30px;
+    right: 50%;
+    width: 510px;
+    margin-right: -630px;
+    color: #fff;
+    line-height: 80px;
+    font-size: 36px;
+    padding-left: 40px;
+    padding-right: 40px;
+    font-weight: 500;
+    .rgba-background(rgba(89, 148, 242, 0.7));
+    .ov-text();
+}
+
