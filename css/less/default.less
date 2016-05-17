@@ -50,3 +50,23 @@ a{
 .dis-i{
     display: inline-block !important;
 }
+
+.animation-zoom{
+    -webkit-transition: all .5s ease 0s;
+    -moz-transition: all .5s ease 0s;
+    -o-transition: all .5s ease 0s;
+}
+.animation-zoom:hover {
+    -webkit-transition: all .5s ease 0s;
+    -moz-transition: all .5s ease 0s;
+    -o-transition: all .5s ease 0s;
+    -moz-transform: translate(0, -5px);
+    -webkit-transform: translate(0, -5px);
+    -o-transform: translate(0, -5px);
+    -ms-transform: translate(0, -5px);
+    transform: translate(0, -5px);
+    -webkit-box-shadow: 0 5px 10px rgba(67,72,84,0.3);
+    -moz-box-shadow: 0 5px 10px rgba(67,72,84,0.3);
+    -o-box-shadow: 0 5px 10px rgba(67,72,84,0.3);
+    box-shadow: 0 5px 10px rgba(67,72,84,0.3);
+}
