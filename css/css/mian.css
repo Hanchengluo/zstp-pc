@@ -324,6 +324,9 @@ a {
 .bg-bai {
   background-color: #fff;
 }
+.bg-cheng {
+  background-color: #ffa127;
+}
 .bg-fooder {
   background-color: #666666;
 }
@@ -390,9 +393,6 @@ a {
   background-color: #d9534f;
   border-color: #d43f3a;
 }
-.columu-box {
-  border: #ddd solid 1px;
-}
 .tab-main {
   display: none;
 }
@@ -401,37 +401,36 @@ a {
 }
 .columu-title {
   height: 48px;
-  border-bottom: #333 solid 1px;
+  border-bottom: #5994f2 solid 1px;
 }
 .columu-title h3 {
   display: inline-block;
   height: 48px;
   line-height: 48px;
-  font-size: 20px;
-  color: #333;
+  font-size: 30px;
+  color: #5994f2;
   padding-left: 20px;
 }
 .columu-title .tab-box {
-  float: right;
+  padding-left: 20px;
 }
 .columu-title .tab-box li {
   float: left;
-  width: 100px;
   height: 48px;
-  text-align: center;
-  border-bottom: #ddd 1px solid;
+  text-align: left;
+  padding-right: 20px;
 }
 .columu-title .tab-box li a {
   display: inline-block;
   width: 100%;
-  height: 30px;
-  margin-top: 8px;
-  line-height: 30px;
+  color: #333;
   font-size: 18px;
-  border-right: #ddd solid 1px;
+  padding-top: 20px;
 }
-.columu-title .tab-box .active {
-  border-bottom: #bb496c 1px solid;
+.columu-title .tab-box .active a {
+  font-size: 30px;
+  color: #5994f2;
+  padding-top: 10px;
 }
 .columu-title .u-rome {
   float: right;
@@ -467,6 +466,9 @@ a {
 }
 .font30 {
   font-size: 30px;
+}
+.font36 {
+  font-size: 36px;
 }
 .font48 {
   font-size: 48px;
@@ -1209,6 +1211,9 @@ input:-ms-input-placeholder {
 .w160 {
   width: 160px;
 }
+.w264 {
+  width: 270px;
+}
 .l-nav-box {
   position: relative;
   width: 100%;
@@ -1333,10 +1338,10 @@ input:-ms-input-placeholder {
   z-index: 9999;
   top: 50%;
   left: 50%;
-  width: 1200px;
+  width: 1139px;
   height: 80px;
   margin-top: -50px;
-  margin-left: -600px;
+  margin-left: -565px;
 }
 .banner-ctrl a {
   position: absolute;
@@ -1370,7 +1375,7 @@ input:-ms-input-placeholder {
   bottom: 30px;
   right: 50%;
   min-width: 510px;
-  margin-right: -630px;
+  margin-right: -600px;
   color: #fff;
   line-height: 80px;
   font-size: 36px;
@@ -1961,6 +1966,73 @@ table {
   font-size: 14px;
   color: #fff;
   line-height: 24px;
+  overflow: hidden;
+}
+#hot-news {
+  height: 392px;
+  padding: 10px 14px 30px 14px;
+}
+#hot-news .first .img {
+  width: 272px;
+  height: 156px;
+  border: #5994f2 solid 1px;
+}
+#hot-news .first .text {
+  width: 480px;
+  height: 156px;
+  overflow: hidden;
+}
+#hot-news .first .title {
+  font-size: 18px;
+  color: #333333;
+  line-height: 24px;
+  margin-bottom: 6px;
+}
+#hot-news .first .title a:hover {
+  color: #5994f2;
+  text-decoration: underline;
+}
+#hot-news .first .intro {
+  font-size: 14px;
+  color: #666;
+  line-height: 24px;
+}
+#hot-news .hotnew-list li {
+  width: 370px;
+  height: 90px;
+  margin-top: 26px;
+  overflow: hidden;
+  float: left;
+  padding-right: 12px;
+}
+#hot-news .hotnew-list li .time {
+  display: inline-block;
+  width: 90px;
+  height: 90px;
+}
+#hot-news .hotnew-list li .time em {
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding-top: 12px;
+}
+#hot-news .hotnew-list li .title {
+  font-size: 18px;
+  color: #333;
+  line-height: 24px;
+  height: 48px;
+  overflow: hidden;
+}
+#hot-news .hotnew-list li .title a:hover {
+  color: #5994f2;
+  text-decoration: underline;
+}
+#hot-news .hotnew-list li .intro {
+  padding-top: 2px;
+  font-size: 12px;
+  color: #666;
+  line-height: 18px;
+  height: 38px;
   overflow: hidden;
 }
 .usercentent-sub {
