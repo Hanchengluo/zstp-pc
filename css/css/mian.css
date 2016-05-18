@@ -1170,6 +1170,7 @@ input:-ms-input-placeholder {
 .top-search input {
   width: 285px;
   height: 34px;
+  line-height: 34px;
   background: #fff;
   border: #fff solid 1px;
   text-indent: 4px;
@@ -1180,7 +1181,9 @@ input:-ms-input-placeholder {
 .top-search a {
   display: inline-block;
   width: 56px;
+  width: 54px\0;
   height: 40px;
+  text-indent: -9999px;
   background: url(../../images/icon-search-btn.png) #5994f2 center no-repeat;
 }
 .main {
@@ -2060,6 +2063,10 @@ table {
 .tab-list li:after {
   clear: both;
 }
+.tab-list li:hover {
+  color: #5994f2;
+  text-decoration: underline;
+}
 .tab-list li em {
   display: inline-block;
   padding-right: 6px;
@@ -2075,6 +2082,35 @@ table {
   text-overflow: ellipsis;
   -o-text-overflow: ellipsis;
   white-space: nowrap;
+}
+#tab-lable {
+  padding: 10px 0;
+  height: 78px;
+  overflow: hidden;
+  *zoom: 1;
+}
+#tab-lable:before,
+#tab-lable:after {
+  display: table;
+  content: "";
+}
+#tab-lable:after {
+  clear: both;
+}
+#tab-lable li {
+  float: left;
+  display: inline-block;
+  padding: 3px 6px;
+  border: #ffa024 solid 1px;
+  color: #ffa024;
+  margin: 8px 12px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+}
+#tab-lable li:hover {
+  background-color: #ffa024;
+  color: #fff;
 }
 .usercentent-sub {
   border: #ddd solid 1px;

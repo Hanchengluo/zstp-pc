@@ -173,6 +173,10 @@
         height: 36px;
         line-height: 36px;
         .l-float();
+        &:hover{
+            color: #5994f2;
+            text-decoration: underline;
+        }
         em{
             display: inline-block;
             padding-right: 6px;
@@ -185,6 +189,25 @@
             width: 344px;
             font-size: 18px;
             .ov-text();
+        }
+    }
+}
+#tab-lable{
+    padding: 10px 0;
+    height: 78px;
+    overflow: hidden;
+    .l-float();
+    li{
+        float: left;
+        display: inline-block;
+        padding: 3px 6px;
+        border: #ffa024 solid 1px;
+        color: #ffa024;
+        margin: 8px 12px;
+        .border-radius(2px);
+        &:hover{
+            background-color: #ffa024;
+            color: #fff;
         }
     }
 }
