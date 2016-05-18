@@ -407,30 +407,35 @@ a {
   display: inline-block;
   height: 48px;
   line-height: 48px;
-  font-size: 30px;
+  font-size: 26px;
   color: #5994f2;
   padding-left: 20px;
 }
 .columu-title .tab-box {
-  padding-left: 20px;
+  padding-left: 10px;
+}
+.columu-title .tab-box .tab {
+  padding-top: 8px;
 }
 .columu-title .tab-box li {
   float: left;
-  height: 48px;
   text-align: left;
-  padding-right: 20px;
+  margin-right: 11px;
+  margin-left: 11px;
 }
 .columu-title .tab-box li a {
   display: inline-block;
   width: 100%;
   color: #333;
-  font-size: 18px;
-  padding-top: 20px;
+  font-size: 26px;
+  padding: 4px 6px;
+  text-align: center;
 }
 .columu-title .tab-box .active a {
-  font-size: 30px;
-  color: #5994f2;
-  padding-top: 10px;
+  color: #FFFFFF;
+  background-color: #5994F2;
+  padding: 4px 6px;
+  text-align: center;
 }
 .columu-title .u-rome {
   float: right;
@@ -2034,6 +2039,42 @@ table {
   line-height: 18px;
   height: 38px;
   overflow: hidden;
+}
+.tab-list {
+  height: 324px;
+  padding-top: 10px;
+  padding-left: 14px;
+  padding-right: 14px;
+}
+.tab-list li {
+  display: block;
+  height: 36px;
+  line-height: 36px;
+  *zoom: 1;
+}
+.tab-list li:before,
+.tab-list li:after {
+  display: table;
+  content: "";
+}
+.tab-list li:after {
+  clear: both;
+}
+.tab-list li em {
+  display: inline-block;
+  padding-right: 6px;
+  float: left;
+  font-family: '宋体';
+  font-size: 18px;
+}
+.tab-list li a {
+  display: inline-block;
+  width: 344px;
+  font-size: 18px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .usercentent-sub {
   border: #ddd solid 1px;
