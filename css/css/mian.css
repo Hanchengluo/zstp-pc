@@ -131,7 +131,6 @@ s,
 samp,
 small,
 strike,
-strong,
 sub,
 sup,
 tt,
@@ -440,7 +439,7 @@ a {
 .columu-title .u-rome {
   float: right;
   font-size: 16px;
-  color: #bb496c;
+  color: #333;
   padding: 0 20px;
   height: 48px;
   line-height: 48px;
@@ -1259,7 +1258,7 @@ input:-ms-input-placeholder {
   text-align: center;
 }
 #nav .items-li .active {
-  background: #1071e0;
+  background: #fda026;
 }
 #nav .items-li:hover .down-nav {
   display: block !important;
@@ -2014,6 +2013,35 @@ table {
   -o-text-overflow: ellipsis;
   white-space: nowrap;
 }
+#tab-lable {
+  padding: 10px 0;
+  height: 78px;
+  overflow: hidden;
+  *zoom: 1;
+}
+#tab-lable:before,
+#tab-lable:after {
+  display: table;
+  content: "";
+}
+#tab-lable:after {
+  clear: both;
+}
+#tab-lable li {
+  float: left;
+  display: inline-block;
+  padding: 3px 6px;
+  border: #ffa024 solid 1px;
+  color: #ffa024;
+  margin: 8px 12px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+}
+#tab-lable li:hover {
+  background-color: #ffa024;
+  color: #fff;
+}
 .article-banner p {
   width: 100%;
   height: 336px;
@@ -2071,6 +2099,9 @@ table {
   top: 0;
   background: url(../../images/subnav-default.png) center center no-repeat;
   z-index: 2;
+  cursor: not-allowed;
+}
+.column-sub .items .c1 {
   cursor: pointer;
 }
 .column-sub .active {
@@ -2082,34 +2113,28 @@ table {
 .column-sub .active em {
   background: url(../../images/subnav-active.png) center center no-repeat;
 }
-#tab-lable {
-  padding: 10px 0;
-  height: 78px;
-  overflow: hidden;
-  *zoom: 1;
+.sub-open {
+  display: none;
+  margin-top: -3px;
 }
-#tab-lable:before,
-#tab-lable:after {
-  display: table;
-  content: "";
+.sub-open li {
+  line-height: 48px;
+  background: #fff;
+  border-top: 1px solid #e5e5e5;
+  margin-bottom: 0;
 }
-#tab-lable:after {
-  clear: both;
-}
-#tab-lable li {
-  float: left;
+.sub-open li a {
   display: inline-block;
-  padding: 3px 6px;
-  border: #ffa024 solid 1px;
-  color: #ffa024;
-  margin: 8px 12px;
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
-  border-radius: 2px;
+  text-indent: 35px;
+  font-size: 16px;
+  color: #444;
+  font-weight: normal;
+  background: url(../../images/ol-li-bg.png) 20px center no-repeat;
 }
-#tab-lable li:hover {
-  background-color: #ffa024;
-  color: #fff;
+.sub-open li a:hover,
+.sub-open li .active {
+  color: #0062ac;
+  background: url(../../images/gt2.png) 20px center no-repeat;
 }
 .column-box {
   width: 860px;
@@ -2153,6 +2178,97 @@ table {
   line-height: 47px;
   font-size: 20px;
   color: #999999;
+}
+.column-box #article-info .info-title {
+  font-size: 20px;
+  text-align: center;
+  padding-bottom: 20px;
+  color: #222;
+}
+.column-box #article-info .info-intro {
+  font-size: 14px;
+  color: #666;
+  text-align: right;
+  padding-bottom: 10px;
+  border-bottom: #ddd dashed 1px;
+  margin-bottom: 10px;
+}
+.column-box #article-info .info-main {
+  color: #333;
+  line-height: 180%;
+  overflow-x: hidden;
+  font-size: 16px;
+}
+#nav-list {
+  width: 860px;
+  overflow: hidden;
+}
+#nav-list ul {
+  display: inline-block;
+  width: 900px;
+  padding-top: 5px;
+}
+#nav-list ul li {
+  float: left;
+  width: 255px;
+  height: 50px;
+  margin-right: 45px;
+  margin-bottom: 26px;
+  color: #fff;
+  background: #fda026;
+  font-size: 20px;
+  overflow: hidden;
+}
+#nav-list ul li a {
+  display: inline-block;
+  width: 200px;
+  height: 50px;
+  line-height: 50px;
+  padding-left: 55px;
+  background: url(../../images/icon-navlist-jt.png) 10px center no-repeat;
+}
+.scenery-list {
+  width: 860px;
+  *zoom: 1;
+}
+.scenery-list:before,
+.scenery-list:after {
+  display: table;
+  content: "";
+}
+.scenery-list:after {
+  clear: both;
+}
+.scenery-list ul {
+  width: 880px;
+  display: inline-block;
+}
+.scenery-list li {
+  float: left;
+  width: 420px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+.scenery-list li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.scenery-list li img {
+  display: block;
+  width: 420px;
+  height: 294px;
+}
+.scenery-list li p {
+  font-size: 18px;
+  color: #FFF;
+  position: absolute;
+  bottom: 0;
+  background: rgba(0, 98, 172, 0.78);
+  width: 400px;
+  padding: 8px 10px;
+  text-align: center;
 }
 .usercentent-sub {
   border: #ddd solid 1px;
