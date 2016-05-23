@@ -1404,108 +1404,39 @@ input:-ms-input-placeholder {
 }
 #list-page {
   margin-top: 10px;
-  margin-bottom: 15px;
+  margin-bottom: 40px;
 }
-#list-page .items {
-  min-width: 650px;
-  _float: none;
-  _width: 760px;
-  _margin-left: auto;
-  _margin-right: auto;
-  overflow: hidden;
-  position: relative;
-  text-align: center;
-}
-#list-page .items ul {
-  display: inline-block;
-  margin: 0 auto;
-}
-#list-page .items li {
-  position: relative;
+#list-page li {
   float: left;
-  color: #3e3e3e;
-  width: 30px;
-  text-align: center;
-  cursor: pointer;
-  -webkit-transition: all .1s linear;
-  -moz-transition: all .1s linear;
-  -o-transition: all .1s linear;
-  transition: all .1s linear;
+  width: 35px;
+  height: 35px;
+  background: #eeeeee;
+  border: #DEDEDE solid 1px;
+  color: #333;
+  border-radius: 3px;
+  margin-left: 10px;
 }
-#list-page .items li a {
-  position: relative;
-  z-index: 1;
+#list-page li a {
   display: block;
-  height: 26px;
-  line-height: 26px;
-  border: solid 1px #ededed;
-  text-decoration: none;
-  font-size: 14px;
-  background-color: #fff;
-}
-#list-page .items li a:hover {
-  color: #1071E0;
-  border-color: #1071E0;
-}
-#list-page .items li span {
-  height: 26px;
-  line-height: 26px;
-}
-#list-page .items li .active {
-  position: relative;
-  z-index: 1;
-  background: #1071E0;
-  color: #fff;
-  border-color: #0C6DDC;
-  cursor: default;
-  text-decoration: none;
-}
-#list-page .items li .active:hover {
-  color: #fff;
-}
-#list-page .items li .dot {
-  border: none;
-  width: 24px;
-  cursor: default;
-}
-#list-page .items .prev,
-#list-page .items .next {
-  width: 70px;
-  font-weight: 400;
-}
-#list-page .items .prev-disabled {
-  color: #ccc;
-}
-#list-page .items .prev-disabled:hover {
-  border-color: #ededed;
-  color: #ccc;
-  cursor: no-drop;
-}
-#list-page .items .total {
-  min-width: 80px;
-  text-align: right;
-}
-#list-page .items .input {
-  width: 55px;
-}
-#list-page .items .input input {
-  width: 50px;
-  height: 20px;
-  float: left;
-  margin-top: 1px;
-  margin-left: 4px;
-}
-#list-page .items .btn1 {
-  width: 66px;
-}
-#list-page .items .btn1 a {
-  display: inline-block;
-  border: #ddd solid 1px;
-  width: 60px;
-  height: 26px;
-  line-height: 26px;
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  font-size: 16px;
   text-align: center;
-  margin-top: 0px;
+}
+#list-page .next,
+#list-page .last {
+  width: 60px;
+}
+#list-page .next a,
+#list-page .last a {
+  width: 100%;
+}
+#list-page .active,
+#list-page li:hover {
+  color: #fff;
+  background: #0062ac;
+  border-color: #005696;
 }
 .form-horizontal {
   padding-top: 1px;
@@ -2179,6 +2110,49 @@ table {
 #tab-lable li:hover {
   background-color: #ffa024;
   color: #fff;
+}
+.column-box {
+  width: 860px;
+}
+.column-box .column-title {
+  margin-bottom: 20px;
+  font-size: 30px;
+  color: #222;
+}
+.column-box .column-title span {
+  font-size: 24px;
+  color: #222;
+}
+.column-box #article-list {
+  margin-bottom: 20px;
+}
+.column-box #article-list li {
+  height: 47px;
+  line-height: 47px;
+  border-bottom: #ddd dashed 1px;
+  background: url(../../images/subnav-default.png) left center no-repeat;
+}
+.column-box #article-list li a {
+  padding-left: 14px;
+  display: inline-block;
+  max-width: 720px;
+  font-size: 20px;
+  color: #333;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.column-box #article-list li a:hover {
+  text-decoration: underline;
+  color: #5994f2;
+}
+.column-box #article-list li span {
+  display: inline-block;
+  float: right;
+  line-height: 47px;
+  font-size: 20px;
+  color: #999999;
 }
 .usercentent-sub {
   border: #ddd solid 1px;

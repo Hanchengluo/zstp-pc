@@ -282,3 +282,43 @@
         }
     }
 }
+.column-box{
+    width: 860px;
+    .column-title{
+        margin-bottom: 20px;
+        font-size: 30px;
+        color: #222;
+        span{
+            font-size: 24px;
+            color: #222;
+        }
+    }
+    #article-list{
+        margin-bottom: 20px;
+        li{
+            height:47px;
+            line-height: 47px;
+            border-bottom: #ddd dashed 1px;
+            background: url(../../images/subnav-default.png) left center no-repeat;
+            a{
+                padding-left: 14px;
+                display: inline-block;
+                max-width: 720px;
+                font-size: 20px;
+                color: #333;
+                .ov-text();
+                &:hover{
+                    text-decoration: underline;
+                    color: #5994f2;
+                }
+            }
+            span{
+                display: inline-block;
+                float: right;
+                line-height: 47px;
+                font-size: 20px;
+                color: #999999;
+            }
+        }
+    }
+}
