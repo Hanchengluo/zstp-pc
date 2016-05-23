@@ -2076,6 +2076,74 @@ table {
   -o-text-overflow: ellipsis;
   white-space: nowrap;
 }
+.article-banner p {
+  width: 100%;
+  height: 336px;
+  background-repeat: no-repeat;
+  background-position: top center;
+  overflow: hidden;
+}
+#web-map {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 16px 0;
+}
+#web-map a {
+  display: inline-block;
+  color: #999999;
+}
+#web-map .home {
+  padding-left: 20px;
+  background: url(../../images/icon-webmap.png) left center no-repeat;
+}
+#web-map em {
+  font-family: '宋体';
+  display: inline-block;
+  padding: 0 5px;
+  color: #999999;
+}
+#web-map span {
+  color: #0062ac;
+}
+.column-sub {
+  padding-bottom: 40px;
+  width: 300px;
+}
+.column-sub .items {
+  line-height: 50px;
+  position: relative;
+  background-color: #ebeced;
+  margin-bottom: 2px;
+}
+.column-sub .items a {
+  height: 50px;
+  display: block;
+  text-indent: 20px;
+  z-index: 1;
+  position: relative;
+  font-size: 18px;
+  color: #444;
+}
+.column-sub .items em {
+  width: 50px;
+  height: 50px;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: url(../../images/subnav-default.png) center center no-repeat;
+  z-index: 2;
+  cursor: pointer;
+}
+.column-sub .active {
+  background-color: #0062ac;
+}
+.column-sub .active a {
+  color: #fff;
+}
+.column-sub .active em {
+  background: url(../../images/subnav-active.png) center center no-repeat;
+}
 .usercentent-sub {
   border: #ddd solid 1px;
   border-bottom: transparent;
