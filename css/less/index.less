@@ -439,3 +439,73 @@
         }
     }
 }
+
+.scenery-info{
+    width: 840px;
+    .img-box
+{
+    position: relative;
+
+    width: 220px;
+    height: 100px;
+    margin: 0 auto;
+
+    border: 15px solid #ebeced;
+    border-bottom: none;
+    background: #fff;
+}
+.img-box li
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    img{
+        display: block;
+    }
+    .title{
+        padding: 10px;
+        font-size: 18px;
+        color: #333;
+        background: #ebeced;
+    }
+}
+.img-box span
+{
+    position: absolute;
+    top: 45%;
+    left: 47%;
+}
+.img-box .left,
+.img-box .right
+{
+    position: absolute;
+    z-index: 11;
+    top: 0;
+}
+.img-box .left
+{
+    left: 0;
+
+    cursor: url(../../images/cur-left.cur.ico), auto;
+}
+.img-box .right
+{
+    right: 0;
+
+    cursor: url(../../images/cur-right.cur.ico), auto;
+}
+.img-box-bottom
+{
+    line-height: 50px;
+
+    overflow: hidden;
+
+    height: 0;
+    margin: 0 auto;
+    padding: 0 15px;
+
+    background: #fff;
+}
+
+}

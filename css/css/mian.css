@@ -2270,6 +2270,60 @@ table {
   padding: 8px 10px;
   text-align: center;
 }
+.scenery-info {
+  width: 840px;
+}
+.scenery-info .img-box {
+  position: relative;
+  width: 220px;
+  height: 100px;
+  margin: 0 auto;
+  border: 15px solid #ebeced;
+  border-bottom: none;
+  background: #fff;
+}
+.scenery-info .img-box li {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+}
+.scenery-info .img-box li img {
+  display: block;
+}
+.scenery-info .img-box li .title {
+  padding: 10px;
+  font-size: 18px;
+  color: #333;
+  background: #ebeced;
+}
+.scenery-info .img-box span {
+  position: absolute;
+  top: 45%;
+  left: 47%;
+}
+.scenery-info .img-box .left,
+.scenery-info .img-box .right {
+  position: absolute;
+  z-index: 11;
+  top: 0;
+}
+.scenery-info .img-box .left {
+  left: 0;
+  cursor: url(../../images/cur-left.cur.ico), auto;
+}
+.scenery-info .img-box .right {
+  right: 0;
+  cursor: url(../../images/cur-right.cur.ico), auto;
+}
+.scenery-info .img-box-bottom {
+  line-height: 50px;
+  overflow: hidden;
+  height: 0;
+  margin: 0 auto;
+  padding: 0 15px;
+  background: #fff;
+}
 .usercentent-sub {
   border: #ddd solid 1px;
   border-bottom: transparent;
