@@ -1,33 +1,44 @@
 #list-page{
     margin-top: 10px;
     margin-bottom: 40px;
-    li{
-        float: left;
-        width: 35px;
-        height: 35px;
-        background: #eeeeee;
-        border: #DEDEDE solid 1px;
-        color: #333;
-        border-radius: 3px;
-        margin-left: 10px;
-        a{
-            display: block;
-            width: 35px;
-            height: 35px;
-            line-height: 35px;
-            font-size: 16px;
-            text-align: center;
-        }
-    }
-    .next,.last{
-        width: 60px;
-        a{
-            width: 100%;
-        }
-    }
-    .active,li:hover{
+}
+
+#Content_Gpager{
+    a{
+    margin-right: 5px;
+    float: left;
+    width: 35px;
+    height: 35px;
+    background: #eeeeee;
+    border: #DEDEDE solid 1px;
+    color: #333;
+    border-radius: 3px;
+    margin-left: 10px;
+    display: block;
+    line-height: 35px;
+    font-size: 16px;
+    text-align: center;
+    font-family: '宋体';
+    &:hover {
         color: #fff;
         background: #0062ac;
         border-color: #005696;
+    }
+    }
+    span{
+    margin-right: 5px;
+    float: left;
+    width: 35px;
+    height: 35px;
+    border: #005696 solid 1px;
+    border-radius: 3px;
+    margin-left: 10px;
+    display: block;
+    line-height: 35px;
+    font-size: 16px;
+    text-align: center;
+    font-family: '宋体';
+    color: #fff !important;
+    background: #0062ac;
     }
 }

@@ -1405,7 +1405,8 @@ input:-ms-input-placeholder {
   margin-top: 10px;
   margin-bottom: 40px;
 }
-#list-page li {
+#Content_Gpager a {
+  margin-right: 5px;
   float: left;
   width: 35px;
   height: 35px;
@@ -1414,28 +1415,32 @@ input:-ms-input-placeholder {
   color: #333;
   border-radius: 3px;
   margin-left: 10px;
-}
-#list-page li a {
   display: block;
-  width: 35px;
-  height: 35px;
   line-height: 35px;
   font-size: 16px;
   text-align: center;
+  font-family: '宋体';
 }
-#list-page .next,
-#list-page .last {
-  width: 60px;
-}
-#list-page .next a,
-#list-page .last a {
-  width: 100%;
-}
-#list-page .active,
-#list-page li:hover {
+#Content_Gpager a:hover {
   color: #fff;
   background: #0062ac;
   border-color: #005696;
+}
+#Content_Gpager span {
+  margin-right: 5px;
+  float: left;
+  width: 35px;
+  height: 35px;
+  border: #005696 solid 1px;
+  border-radius: 3px;
+  margin-left: 10px;
+  display: block;
+  line-height: 35px;
+  font-size: 16px;
+  text-align: center;
+  font-family: '宋体';
+  color: #fff !important;
+  background: #0062ac;
 }
 .form-horizontal {
   padding-top: 1px;
@@ -2160,7 +2165,8 @@ table {
 .column-box #article-list li a {
   padding-left: 14px;
   display: inline-block;
-  max-width: 720px;
+  max-width: 610px;
+  width: 610px\0;
   font-size: 20px;
   color: #333;
   overflow: hidden;
